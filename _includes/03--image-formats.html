@@ -1,0 +1,39 @@
+<h2>Image Formats</h2>
+
+<p>Images are so prevalent in the digital world these days that we put as much conscious thought into them as we do words. Sadly, this leads to a society of digital citizens who don’t take a second thought as to the specific of how those images work. Whether you’re an artist, developer, or Internet sharer, the formats make a difference.</p>
+
+<h3>JPEG (Joint Photographic Experts Group)</h3>
+<p class="subtitle">1992 / Joint Photographic Experts Group et al</p>
+<p class="subtitle">.jpg .jpeg .jpe</p>
+
+<p>Almost considered the “default” format of images, JPEG is massively supported. While it is an old format, it has been well maintained and updated through the years. Between the wide support and its efficient method of lossy compression, JPEG is a good all-around choice, especially in scenarios where the file size is a limiting factor, like on the web. Most if not all cameras have an option to output JPEG, if that’s not the default setting anyway.</p>
+
+<h3>JPEG 2000</h3>
+<p class="subtitle">2000 / Joint Photographic Experts Group</p>
+<p class="subtitle">.jp2 .jpx .j2k .jpf .jpm .mj2</p>
+
+<p>This is a version of the JPEG standard that brings a lot of technical improvements, including support for any bit depth, the choice between lossless and lossy compression, and support for transparency. It is not supported on the web, except for the Safari browser, but it has found a fair amount of use in professional workflows, including digital cinema.</p>
+
+<h3>GIF (Graphics Interchange Format)</h3>
+<p class="subtitle">1987 / CompuServe</p>
+<p class="subtitle">.gif</p>
+
+<p>This is a very old format, which originally got ahead in the industry because it was efficient and made for small file sizes, letting it be downloaded more quickly. It remains somewhat relevant today mainly because of its wide support, small size, and support for transparency and animation. A major downside is that it only supports up to 8-bit color, or 256 colors. Anything past that will produce a dithering effect and downgrade the perceived quality of the image. This is a good choice if you’re working with an image that has limited colors anyway, or if you need native animation.</p>
+
+<h3>PNG (Portable Network Graphics)</h3>
+<p class="subtitle">1996 / PNG Development Group</p>
+<p class="subtitle">.png</p>
+
+<p>This format was created in response to the desire for an alternative to the patented GIF format. Amusingly, the acronym came from the suggestion "PING Is Not GIF", before being shorted to PNG. PNG is a great improvement on GIF in several ways. It supports up to 32-bit color, including optional alpha channels for transparency, it uses lossless compression, and it can generally achieve a smaller file size than GIF, especially for higher-res images. While JPEG shines with photographs, PNG is great for most other, less organic images, or for images where the lossy compression of JPEG would compromise it.</p>
+
+<h3>WebP</h3>
+<p class="subtitle">2010 / Google</p>
+<p class="subtitle">.webp</p>
+
+<p>WebP is a newer format, created alongside a sister video format, WebM, using the same general architecture. It has similar features to PNG, including lossless or lossy compression, and transparency. However, it also has support for animation, bringing the best of both PNG and GIF together. However, the lack of support is the main issue with WebP. It is not supported on Apple devices at all, and support in applications is mainly added using plugins developed by Google and their partners.</p>
+
+<h3>SVG (Scalable Vector Graphics)</h3>
+<p class="subtitle">1998 / World Wide Web Consortium</p>
+<p class="subtitle">.svg .svgz</p>
+
+<p>SVG is vastly different than the other formats on this list because it is a vector format. The other formats, raster images, store and compute colors pixel by pixel. Vector formats like SVG instead provide a set of instructions and equations for the computer to follow to draw the image. In many cases, this means a dramatically smaller file, which is great for the web, its intended use. On top of being a very small file, SVG is a standard extended from the same file markup as HTML. In fact, it is valid to take the text version of an SVG file, drop it straight into a plain HTML document with no problems. This avoids another network request for an image, which is a big win for web performance. However, if you are trying to replicate a photograph in SVG, it will not only look awkward, but it will almost certainly be an even larger file than a plain JPEG. SVG is best for man-made illustrations, or images requiring text on them.</p>

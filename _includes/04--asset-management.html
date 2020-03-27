@@ -1,0 +1,122 @@
+<h2>Asset Management</h2>
+
+<p>In choosing a strategy for organizing my files, I knew what because I'm working on a Windows machine, I would have to lean into two main tools: the names of the files themselves, and a system of folders. I don't have the option to tag files or otherwise mark up the metadata, at least not in a way that is uniform among all different file types.</p>
+
+<p>With that said, there are two projects that are part of this class that I have to manage. This Documentation is the first one. The other is a "Use Case" or an example of an actual product as an example of real-life application.</p>
+
+<p>Here is my folder structure as it currently stands, with notes:</p>
+
+<ul>
+    <li>Root Folder
+        <ul>
+            <li>Audio
+                <ul>
+                    <li>Originals
+                        <ul>
+                            <li>(AIFF files downloaded from Canvas files, other incoming lossless sources)</li>
+                        </ul>
+                    </li>
+                    <li>Evaluation
+                        <ul>
+                            <li>boston--[sample rate]--[bit depth]--[bit rate].[format extension]</li>
+                        </ul>
+                    </li>
+                    <li>Finals
+                        <ul>
+                            <li>Documentation
+                                <ul>
+                                    <li>(For prepped files ready for documentation)</li>
+                                </ul>
+                            </li>
+                            <li>Use Case
+                                <ul>
+                                    <li>(For prepped files ready for use case)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Video
+                <ul>
+                    <li>Originals
+                        <ul>
+                            <li>(Source files downloaded from Canvas)</li>
+                        </ul>
+                    </li>
+                    <li>Evaluation
+                        <ul>
+                            <li>frankenstein.prproj (The Premiere project I stiched files together in)</li>
+                            <li>frankenstein--[variable or constant][optional number of passes]-[target bit rate]-[optional bit rate cap].mp4</li>
+                        </ul>
+                    </li>
+                    <li>Finals
+                        <ul>
+                            <li>Documentation
+                                <ul>
+                                    <li>(For prepped files ready for documentation)</li>
+                                </ul>
+                            </li>
+                            <li>Use Case
+                                <ul>
+                                    <li>(For prepped files ready for use case)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Images
+                <ul>
+                    <li>??</li>
+                </ul>
+            </li>
+            <li>Documentation
+                <ul>
+                    <li>index.njk</li>
+                    <li>style.css</li>
+                    <li>_includes
+                        <ul>
+                            <li>01--audio-formats.html</li>
+                            <li>02--video-formats.html</li>
+                            <li>03--image-formats.html</li>
+                            <li>04--asset-management.html</li>
+                            <li>05--format-evaluation.html</li>
+                            <li>06--implementation.html</li>
+                        </ul>
+                    </li>
+                    <li>images
+                        <ul>
+                            <li>(For actual images referenced in documentation)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Use Case
+                <ul>
+                    <li>index.html</li>
+                    <li>style.css</li>
+                    <li>images
+                        <ul>
+                            <li>(For actual images used in use case)</li>
+                        </ul>
+                    </li>
+                    <li>videos
+                        <ul>
+                            <li>(For actual videos used in use case)</li>
+                        </ul>
+                    </li>
+                    <li>audio
+                        <ul>
+                            <li>(For actual audio used in use case)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<p>First off, there are three different folders dedicated to working with the three main different types of files, audio, video, and images. In each there will be an ingest folder for the original files, an output folder for the final product, and any necessary folders for experimentation in between those two steps. In the evaluation folders, the file name defines the different details about the individual file and its output settings for quick comparison.</p>
+
+<p>There are also folders dedicated to the Documentation and to the use case. Both the use case project and the documentation will be web pages. For me, this means that they will have an actual root document, index, as well as resource folders for images, video, and audio as necessary. Both folders will also have the necessary Git files to keep everything clean and trackable. The major difference between the use case project and the documentation is that the documentation index is split into multiple chapters, each with their own HTML. When this is published, the individual chapters will all be concatenated together into one long document.</p>
