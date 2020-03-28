@@ -1,7 +1,31 @@
 <h2>Implementation (Use Case)</h2>
 
 <h3>Audio</h3>
---transfer--
+
+<p>The Use Case I’m building is going to be a web page. Split into multiple sections, each section will focus on a different classical composer, from Mozart to Rachmaninoff. Each section has a sample track from the associated composer, for a total of five.</p>
+
+<p>Because I’m working with a web page, this means I have less to worry about when it comes to another program repackaging the audio assets and potentially compressing them again. On the other hand, it also means being sure to support many different browsers and an added amount of technical overhead to make the whole thing.</p>
+
+<p>I’m implementing the audio files into the page using the native <code>&lt;audio&gt;</code> HTML element. One of the features of this element is that I can write several source files into the HTML, and the browser will be sure to only download the first one, that it is able to support. Now, the strategy is to first give it a file that would be a better experience, then provide fallbacks all the way back to MP3, which all current browsers support.</p>
+
+<p>I started with original FLAC files from a vendor. I’m compressing them into three different versions for each track:</p>
+
+<ol>
+<li>Ogg, with the Vorbis CODEC, at 60% quality. This is listed first because from what I was able to tell when listening, this provided the best quality of the options I provided. This will be the default file played, unless the browser or device doesn’t support it.</li>
+<li>AAC, at a bitrate of 96kbps. This was as small as I could make it without also changing the sample rate, which I wanted to keep consistant across all the files at 44.1khz.</li>
+<li>MP3, at 128kbps. If I went any lower than that it didn’t sound as clean. While the files weren’t as small as the AACs, I can rest assured that it is a fallback that will always work.</li>
+</ol>
+
+<p>The end result in the HTML looks a bit like this (some code removed for clarity):</p>
+
+<pre><code>&lt;audio controls preload&gt;
+&lt;source src=”audio/mozart.ogg” type=”audio/ogg;codecs=vorbis”/&gt;
+&lt;source src=”audio/mozart.aac” type=”audio/aac”/&gt;
+&lt;source src=”audio/mozart.mp3” type=”audio/mpeg”/&gt;
+&lt;/audio&gt;</code></pre>
+
+<p>The current implementation is previewable online now at:<br><a href="https://dgm2341-usecase.netlify.com/" target="_blank">https://dgm2341-usecase.netlify.com/</a></p>
+
 <h3>Video</h3>
---write up--
+
 <h3>Images</h3>
