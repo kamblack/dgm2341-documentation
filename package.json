@@ -145,7 +145,7 @@
     "limiter": "^1.1.5",
     "linkify-it": "^2.2.0",
     "load-json-file": "^1.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.isfinite": "^3.3.2",
     "longest": "^1.0.1",
     "lru-cache": "^4.1.5",
