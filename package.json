@@ -259,7 +259,7 @@
     "serve-static": "^1.13.2",
     "server-destroy": "^1.0.1",
     "set-blocking": "^2.0.0",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "setprototypeof": "^1.1.1",
     "sigmund": "^1.0.1",
     "slash": "^1.0.0",
